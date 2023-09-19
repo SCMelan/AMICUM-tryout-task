@@ -1,14 +1,9 @@
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
+import { changeTheme } from "@/store/changeTheme";
 
-export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
+const store = createStore({
   modules: {
-  }
-})
+    changeTheme,
+  },
+});
+export default store;
